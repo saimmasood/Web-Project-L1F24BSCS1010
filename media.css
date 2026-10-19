@@ -180,12 +180,3 @@ footer {
     }
 }
 
-iframe {
-    width: 100%;
-    max-width: 650px;
-    height: 350px;
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #e50914;
-    border-radius: 8px;
-}
