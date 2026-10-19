@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FLEX Fitness Club</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="logo">FLEX FITNESS CLUB</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <h2 class="heading">JOIN FLEX FITNESS CLUB</h2>
+
+    <form class="register-form">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" required>
+
+        <label for="plan">Membership Plan:</label>
+        <select id="plan" required>
+            <option value="">Select a plan</option>
+            <option>Monthly</option>
+            <option>Quarterly</option>
+            <option>Yearly</option>
+        </select>
+
+        <label for="sessions">Sessions Per Week (1-7):</label>
+        <input type="number" id="sessions" min="1" max="7">
+
+        <label for="goal">Fitness Goal:</label>
+        <select id="goal">
+            <option>Weight Loss</option>
+            <option>Muscle Building</option>
+            <option>General Fitness</option>
+        </select>
+
+        <label for="message">Additional Message:</label>
+        <textarea id="message" maxlength="300"></textarea>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the membership terms.
+        </label>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2026 FLEX Fitness Club. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
