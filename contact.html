@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FLEX Fitness Club</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="logo">FLEX FITNESS CLUB</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="media.html">Media</a>
+            <a href="register.html">Register</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-heading">
+        <h2>CONTACT US</h2>
+        <p>Have questions? We would love to hear from you.</p>
+    </section>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h2>ABOUT FLEX FITNESS CLUB</h2>
+            <p>
+                FLEX Fitness Club is a place where people come to improve
+                their fitness and achieve their goals. We provide modern
+                gym equipment, experienced trainers and a friendly
+                environment for everyone.
+            </p>
+            <p>
+                Whether you want to lose weight, build muscles or stay
+                healthy, we are here to help you.
+            </p>
+        </div>
+
+        <div class="contact-info">
+            <h2>GET IN TOUCH</h2>
+            <p><strong>Address:</strong>Johar Town, Lahore, Pakistan</p>
+            <p><strong>Email:</strong> info@saimfitness.com</p>
+            <p><strong>Phone:</strong> +92 300 7635898</p>
+            <p><strong>Opening Hours:</strong> Monday - Saturday</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>SEND US A MESSAGE</h2>
+
+        <form id="contactForm" class="contact-form">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="response"></p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FLEX Fitness Club. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
