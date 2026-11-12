@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    color: #e50914;
+    margin: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+.page-heading {
+    text-align: center;
+    padding: 40px 15px;
+    background-color: #222222;
+}
+
+.page-heading h2 {
+    color: #e50914;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 50px;
+}
+
+.about-text, .contact-info {
+    background-color: #1b1b1b;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    color: #e50914;
+}
+
+.about-text p {
+    line-height: 1.7;
+}
+
+.contact-info p {
+    margin: 20px 0;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #e50914;
+}
+
+.contact-form {
+    max-width: 550px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #292929;
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #e50914;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: #e50914;
+}
+
+#response {
+    color: #e50914;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #080808;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .page-heading {
+        padding: 25px 10px;
+    }
+}
